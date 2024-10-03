@@ -1,0 +1,20 @@
+$size: 32px;
+
+:host {
+    position: absolute;
+    width: $size;
+    height: $size;
+    border-radius: 100%;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid transparent;
+}
+
+.comment {
+    &__content { 
+        text-align: center;
+    }
+}

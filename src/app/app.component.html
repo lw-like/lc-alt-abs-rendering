@@ -1,0 +1,9 @@
+<div class="comments__wrapper">
+  @if (comments$ | async; as comments) {
+    @for ( comment of comments; track comment.id) {
+      <app-comment [x]="comment.position[0]" [y]="comment.position[1]" [color]="comment.color">
+        {{ comment.id }}
+      </app-comment>
+    }
+  }
+</div>
